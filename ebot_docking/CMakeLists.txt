@@ -19,6 +19,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(rclpy REQUIRED)
+
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -60,16 +61,8 @@ install(PROGRAMS
 
 install(PROGRAMS
 	scripts/ebot_nav2_cmd.py
-  DESTINATION lib/${PROJECT_NAME}
-)
-
-install(PROGRAMS
-	scripts/task3b_nav.py
-  DESTINATION lib/${PROJECT_NAME}
-)
-
-install(PROGRAMS
-	scripts/dock_task4c.py
+  scripts/task3b_nav.py
+  scripts/dock_task4c.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

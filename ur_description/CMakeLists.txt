@@ -4,6 +4,8 @@ project(ur_description)
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)
 find_package(rclpy REQUIRED)
+#find_package(linkattacher_msgs REQUIRED)
+#find_package(pymoveit2 REQUIRED)
 
 install(
   DIRECTORY config launch meshes rviz urdf test
@@ -21,7 +23,6 @@ endif()
  
 install(PROGRAMS
   scripts/task1a.py
-  scripts/arm_task4c.py
   scripts/aruco_task4c.py
   scripts/aruco_test.py
   scripts/armed/spawner_box_com.py

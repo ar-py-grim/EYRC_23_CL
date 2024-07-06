@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+
 import rclpy
 from nav2_simple_commander.robot_navigator import BasicNavigator
 from geometry_msgs.msg import PoseStamped
@@ -11,7 +14,7 @@ pos = []
 rack_id = []
 i = 2
 
-with open(r'ebot_nav2/scripts/config4C.yaml') as file:
+with open(r'/home/grim/cl_ws/src/ebot_nav2/scripts/config4C.yaml') as file:
     data = yaml.safe_load(file)
 
     # Extract positions and package IDs
