@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/grim/eyantra_ros/install/realsense_gazebo_plugin/include/**",
+        "/home/grim/eyantra_ros/install/linkattacher_msgs/include/**",
+        "/home/grim/eyantra_ros/install/gazebo_ros2_control/include/**",
+        "/home/grim/eyantra_ros/install/ebot_docking/include/**",
+        "/home/grim/ros2_ws/install/my_robot_interfaces/include/**",
+        "/home/grim/turtlebot3_ws/install/turtlebot3_gazebo/include/**",
+        "/home/grim/turtlebot3_ws/install/turtlebot3_fake_node/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/grim/eyantra_ros/src/gazebo_ros2_control/include/**",
+        "/home/grim/eyantra_ros/src/realsense_gazebo_plugin/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
