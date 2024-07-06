@@ -31,6 +31,8 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <depend>linkattacher_msgs</depend>
+
   <exec_depend>joint_state_publisher_gui</exec_depend>
   <exec_depend>launch</exec_depend>
   <exec_depend>launch_ros</exec_depend>

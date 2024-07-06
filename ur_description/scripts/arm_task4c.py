@@ -11,10 +11,10 @@ from example_interfaces.msg import Int16
 import tf2_ros
 from rclpy.node import Node
 #from threading import Thread
-from pymoveit2 import MoveIt2
+from pymoveit2.pymoveit2 import MoveIt2
 from rclpy.callback_groups import ReentrantCallbackGroup
 from geometry_msgs.msg import TwistStamped
-from pymoveit2.robots import ur5
+from pymoveit2.pymoveit2.robots import ur5
 from linkattacher_msgs.srv import AttachLink
 from linkattacher_msgs.srv import DetachLink
 
