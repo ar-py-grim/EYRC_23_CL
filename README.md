@@ -37,12 +37,14 @@ To run the project
 ros2 launch eyantra_warehouse task4c.launch.py
 ```
 2. Next to enable controller for the ur5 arm run
-   ```sh ros2 launch ur5_moveit spawn_ur5_launch_moveit.launch.py```
+   ```sh
+   ros2 launch ur5_moveit spawn_ur5_launch_moveit.launch.py```
    
 4. Next enable navigation for the ebot using
-```sh ros2 launch ebot_nav2 ebot_bringup_launch.py```
+```sh
+ros2 launch ebot_nav2 ebot_bringup_launch.py```
 
-5. Run the following scripts
+6. Run the following scripts
 ```sh
 ros2 run ebot_docking dock_task4c.py
 ```
