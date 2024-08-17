@@ -38,7 +38,7 @@ To run the project
 ros2 launch eyantra_warehouse task4c.launch.py
 ```
 2. Next to enable controller for the ur5 arm run
-3. ```sh
+```sh
 ros2 service call /servo_node/start_servo std_srvs/srv/Trigger {}
 ```
 followed by
