@@ -65,6 +65,9 @@ ros2 run pymoveit2 arm_task4c.py
 ros2 run ur_description aruco_task4c.py
 ```
 
+![eYRC-CL1691_Task4C](https://github.com/user-attachments/assets/6ab5b8ac-8c12-4b52-a0a1-4224004c4424)
+
+
 ### References
 
 Pymoveit2 package link https://github.com/AndrejOrsula/pymoveit2
