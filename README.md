@@ -62,5 +62,5 @@ ros2 run ur_description aruco_task4c.py
 
 ### References
 
-pymoveit2 package link https://github.com/AndrejOrsula/pymoveit2
+Pymoveit2 package link https://github.com/AndrejOrsula/pymoveit2
 
