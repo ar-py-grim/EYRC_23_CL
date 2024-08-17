@@ -1,7 +1,8 @@
 # Welcome to eYRC Cosmo Logistic Theme 2023-24
 
 ### Packages
-This repository contains three packages (as of now):
+This repository contains ten packages:
+
 1. *aws-robomaker-small-warehouse-world*: Contains warehouse rack and package models
 
 2. *ebot_description*: Contains mobile robot (ebot) description model
