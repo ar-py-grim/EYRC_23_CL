@@ -13,17 +13,17 @@ This repository contains ten packages:
 
 4. **eyantra_warehouse**: Contains warehouse world model
 
-5. **gazebo_ros2_control**:
+5. **gazebo_ros2_control**: Contains ros2 control to integrate with gazebo
 
-6. **linkattacher_msgs**:
+6. **linkattacher_msgs**: Contains services for gripper
 
 7. **pymoveit2**: Contains the package to perform arm manupulation
 
-8. **realsense_gazebo_plugin**:
+8. **realsense_gazebo_plugin**: Contains package for the Intel D435 realsense camera.
 
-9. **ur5_moveit**:
+9. **ur5_moveit**: Contains ur5 settings for moveit2
 
-10. **ur_description**:
+10. **ur_description**: Contains description files and meshes for Universal Robots manipulators
 
 
 To launch virtual environment, use this command-
