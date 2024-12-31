@@ -7,7 +7,7 @@
 *        =============================================
 *
 *
-*  Filename:			eyantra_warehouse.world
+*  Filename:			eyantra_warehouse_task2a.world
 *  Created:				12/07/2023
 *  Last Modified:	12/09/2023
 *  Modified by:   Ravi
@@ -137,7 +137,7 @@
   <include>
       <uri>model://boxes/box_1</uri>
       <name>box1</name>
-      <pose>1.13 -2.455 0.89 0 0 0.0</pose>
+      <pose>1.142701 -2.454580 1.234996 0.0 0.0 0.0</pose>
 	</include>
 
   <!-- RACK 1 -->
@@ -146,19 +146,13 @@
   <include>
       <uri>model://rack</uri>
       <name>rack2</name>
-      <pose>1.35 -1.755 0.0 0 0 1.57</pose>
-	</include>
-
-  <include>
-      <uri>model://boxes/box_3</uri>
-      <name>box3</name>
-      <pose>1.35 -1.865 0.51 0 0 -1.57</pose>
+      <pose>1.620870 -1.768304 0.074998 0.0 0.0 1.57</pose>
 	</include>
 
   <include>
       <uri>model://boxes/box_49</uri>
       <name>box49</name>
-      <pose>1.35 -1.865 0.89 0 0 -1.57</pose>
+      <pose>1.624334 -1.862088 1.309993 0.0 0.0 -1.57</pose>
 	</include>
   <!-- RACK 2 -->
 
@@ -166,8 +160,15 @@
   <include>
       <uri>model://rack</uri>
       <name>rack3</name>
-      <pose>1.35 -3.155 0.0 0 0 -1.57</pose>
+      <pose>1.569400 -3.154831 0.0 0.0 0.0 -1.57</pose>
 	</include>
+
+  <include>
+      <uri>model://boxes/box_3</uri>
+      <name>box3</name>
+      <pose>1.603805 -3.061471 1.235025 0.0 0.0 1.57</pose>
+	</include>
+  
   <!-- RACK 3 -->
 
   <include>
