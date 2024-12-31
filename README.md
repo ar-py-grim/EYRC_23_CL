@@ -1,4 +1,4 @@
-# Welcome to eYRC Cosmo Logistic Theme 2023-24
+# eYRC Cosmo Logistic Theme 2023-24
 
 ![eYRC-CL1691_Task4C](https://github.com/user-attachments/assets/6ab5b8ac-8c12-4b52-a0a1-4224004c4424)
 
