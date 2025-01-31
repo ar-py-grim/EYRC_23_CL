@@ -17,6 +17,7 @@ install(PROGRAMS
     ${EXAMPLES_DIR}/ex_pose_goal.py
     ${EXAMPLES_DIR}/ex_servo.py
     ${EXAMPLES_DIR}/arm_task4c.py
+    ${EXAMPLES_DIR}/arm_task1b.py
     DESTINATION lib/${PROJECT_NAME}
 )
 
