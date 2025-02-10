@@ -5,12 +5,13 @@
 *****************************************************************************************
 *
 *        =============================================
-*                  TBD Theme (eYRC 2023-24)
+*                  CL Theme (eYRC 2023-24)
 *        =============================================
 *
 *
-*  Filename:			ebot_display_launch.py
-*  Description:         Use this file to spawn ebot inside e-yantra warehouse world in the gazebo simulator and publish robot states.
+*  Filename:			task4c.launch.py
+*  Description:         Use this file to spawn ebot inside e-yantra warehouse world in the gazebo 
+                        simulator and publish robot states 
 *  Created:				16/07/2023
 *  Last Modified:	    16/07/2023
 *  Modified by:         Archit, Jaison
@@ -41,11 +42,17 @@ def generate_launch_description():
     robot_description_config_ebot = xacro.process_file(xacro_file_ebot)
     robot_description_ebot = robot_description_config_ebot.toxml()
 
+    xacro_file_ur5 = os.path.join(
+    get_package_share_directory('ur5_moveit'), 'config', 'ur5.urdf.xacro')
+    assert os.path.exists(xacro_file_ur5), f"UR5 Xacro file missing: {xacro_file_ur5}"
+    robot_description_config_ur5 = xacro.process_file(xacro_file_ur5)
+    robot_description_ur5 = robot_description_config_ur5.toxml()
+
 
     start_world = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(get_package_share_directory('ebot_description'), 'launch', 'start_world_launch_4.py'),
-        )
+            os.path.join(get_package_share_directory('ebot_description'), 
+                         'launch', 'start_world_launch_4.py'))
     )
 
     robot_state_publisher_node_ebot = launch_ros.actions.Node(
@@ -54,7 +61,15 @@ def generate_launch_description():
         executable='robot_state_publisher',
         parameters=[{"robot_description": robot_description_ebot}],
         remappings=[('robot_description', 'robot_description_ebot')]
+    )
 
+    robot_state_publisher_node_ur5 = launch_ros.actions.Node(
+        package='robot_state_publisher',
+        executable='robot_state_publisher',
+        name='ur5_state_publisher',
+        parameters=[{'robot_description': robot_description_ur5}],
+        remappings=[('robot_description', 'robot_description_ur5')],
+        output='screen'
     )
 
     static_transform = launch_ros.actions.Node(
@@ -62,7 +77,8 @@ def generate_launch_description():
         executable='static_transform_publisher',
         name='static_transform_publisher',
         arguments = ["1.6", "-2.4", "-0.8", "3.14", "0", "0", "world", "odom"],
-        output='screen')
+        output='screen'
+    )
     
     spawn_ebot = launch_ros.actions.Node(
     	package='gazebo_ros', 
@@ -78,8 +94,8 @@ def generate_launch_description():
         name='ur5_spawner',
     	executable='spawn_entity.py',
         arguments=['-entity', 'ur5', '-topic', 'robot_description_ur5', '-x', '1.6', '-y', '-2.4', '-z', '0.58', '-Y', '3.14'],
-        output='screen')
-
+        output='screen'
+    )
                                                  
     return launch.LaunchDescription([
         launch.actions.DeclareLaunchArgument(name='gui', default_value='True',
@@ -88,7 +104,8 @@ def generate_launch_description():
                                             description='Flag to enable use_sim_time'),
         start_world,
         robot_state_publisher_node_ebot,
+        # robot_state_publisher_node_ur5,
         spawn_ebot,
+        # spawn_arm,
         static_transform,
-        spawn_arm
     ])
