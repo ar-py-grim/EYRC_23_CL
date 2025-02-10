@@ -215,9 +215,7 @@ def generate_launch_description():
     #ld.add_action(mapper_online_async_param_launch)
 
     # used for localization
-
     ld.add_action(robot_localization_node)
     ld.add_action(bringup_cmd_group)
-
 
     return ld
