@@ -128,5 +128,4 @@ def generate_launch_description():
         spawn_controllers_state,
         spawn_arm,
         rviz,
-        ]
-    )
+        ])
