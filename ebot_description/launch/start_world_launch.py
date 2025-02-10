@@ -21,16 +21,11 @@
 
 
 import os
-
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.actions import IncludeLaunchDescription
-from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration
-from launch_ros.actions import Node
-from launch.actions import ExecuteProcess
 from ament_index_python.packages import get_package_prefix
 
 pkg_name='eyantra_warehouse'
@@ -63,8 +58,8 @@ def generate_launch_description():
     return LaunchDescription([
         DeclareLaunchArgument(
           'world',
-            default_value=[os.path.join(pkg_models_dir, 'worlds', 'eyantra_warehouse_task2a.world'), ''],
-          # default_value=[os.path.join(pkg_models_dir, 'worlds', 'eyantra_warehouse_task2b.world'), ''], # Change name of world file if required.
+          default_value=[os.path.join(pkg_models_dir, 'worlds', 'eyantra_warehouse_task2a.world'), ''],
+          #default_value=[os.path.join(pkg_models_dir, 'worlds', 'eyantra_warehouse_task2b.world'), ''], # Change name of world file if required.
           description='SDF world file'),
         gazebo
         # ExecuteProcess(cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_factory.so'], output='screen'),

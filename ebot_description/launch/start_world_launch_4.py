@@ -5,11 +5,11 @@
 *****************************************************************************************
 *
 *        =============================================
-*                  TBD Theme (eYRC 2023-24)
+*                  CL Theme (eYRC 2023-24)
 *        =============================================
 *
 *
-*  Filename:			start_world_launch.py
+*  Filename:			start_world_launch_4.py
 *  Description:         Use this file to launch e-yantra warehouse world in gazebo simulator 
 *  Created:				12/07/2023
 *  Last Modified:	    12/07/2023
@@ -26,11 +26,7 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.actions import IncludeLaunchDescription
-from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration
-from launch_ros.actions import Node
-from launch.actions import ExecuteProcess
 from ament_index_python.packages import get_package_prefix
 
 pkg_name='eyantra_warehouse'
