@@ -11,9 +11,9 @@ This repository contains ten packages:
 
 3. **ebot_docking**: Contains script for the ebot to perform docking operation
 
-4. **eyantra_warehouse**: Contains warehouse world model
+4. **ebot_nav2**: Contains configurations and paramters for autonomous navigation
 
-5. **gazebo_ros2_control**: Contains ros2 control to integrate with gazebo
+5. **eyantra_warehouse**: Contains warehouse world model
 
 6. **linkattacher_msgs**: Contains services for gripper
 
@@ -45,6 +45,9 @@ ros2 launch eyantra_warehouse task4c.launch.py
 ros2 service call /servo_node/start_servo std_srvs/srv/Trigger {}
 ```
 followed by
+``sh
+ros2 launch ur5_moveit spawn_ur5.launch.py
+```
 ```sh
 ros2 launch ur5_moveit spawn_ur5_launch_moveit.launch.py
 ```
