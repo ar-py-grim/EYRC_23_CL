@@ -5,11 +5,11 @@
 *****************************************************************************************
 *
 *        =============================================
-*                  TBD Theme (eYRC 2023-24)
+*                  CL Theme (eYRC 2023-24)
 *        =============================================
 *
 *
-*  Filename:			ebot_display_launch.py
+*  Filename:			task2a.launch.py
 *  Description:         Use this file to spawn ebot inside e-yantra warehouse world in the gazebo simulator and publish robot states.
 *  Created:				16/07/2023
 *  Last Modified:	    16/07/2023
