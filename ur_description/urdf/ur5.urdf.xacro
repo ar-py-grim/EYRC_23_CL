@@ -44,7 +44,7 @@
     <!-- Kinematic model -->
     <!-- Properties from urcontrol.conf -->
     <!--
-      DH for UR5:
+      DH for UR5-
       a = [0.00000, -0.42500, -0.39225,  0.00000,  0.00000,  0.0000]
       d = [0.089159,  0.00000,  0.00000,  0.10915,  0.09465,  0.0823]
       alpha = [ 1.570796327, 0, 0, 1.570796327, -1.570796327, 0 ]
@@ -372,7 +372,7 @@
     <!-- ROS base_link to UR 'Base' Coordinates transform -->
     <!-- <link nme="${prefix}base"/> -->
     <!-- <joint name="${prefix}base_link-base_fixed_joint" type="fixed">
-      NOTE: this rotation is only needed as long as base_link itself is
+      NOTE- this rotation is only needed as long as base_link itself is
                  not corrected wrt the real robot (ie: rotated over 180
                  degrees)
       

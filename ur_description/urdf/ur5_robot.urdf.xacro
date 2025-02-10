@@ -1,19 +1,18 @@
 <?xml version="1.0"?>
 <!-- 
-  Author: Jaison
-  Credit: e-Yantra, IIT Bombay
+  Author- Jaison
+  Credit- e-Yantra, IIT Bombay
   Copyright (c) 2020 eYantra IITB 
  -->
  
-<robot xmlns:xacro="http://wiki.ros.org/xacro"
-       name="ur5" >
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="ur5" >
 
   <xacro:arg name="transmission_hw_interface" default="hardware_interface/PositionJointInterface"/>
 
   <!-- common gazebo related stuff -->
   <xacro:include filename="$(find ur_description)/urdf/common.gazebo.xacro" />
   <xacro:include filename="ur5.ros2_control.xacro" />
-  <xacro:ur5_ros2_control name="FakeSystem" initial_positions_file="$(find ur_description)/config/initial_positions.yaml"/>
+  <xacro:ur5_ros2_control name="GazeboSystem" initial_positions_file="$(find ur_description)/config/initial_positions.yaml"/>
   <!-- ur5 -->
   <xacro:include filename="$(find ur_description)/urdf/ur5.urdf.xacro" />
   <xacro:include filename="$(find ur_description)/urdf/realsense2.urdf.xacro" />
@@ -60,5 +59,4 @@
   </inertial>
   </link>
   
-
 </robot>

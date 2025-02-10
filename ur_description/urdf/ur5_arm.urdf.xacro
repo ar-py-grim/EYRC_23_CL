@@ -1,12 +1,11 @@
 <?xml version="1.0"?>
 <!-- 
-  Author: Jaison
-  Credit: e-Yantra, IIT Bombay
+  Author- Jaison
+  Credit- e-Yantra, IIT Bombay
   Copyright (c) 2020 eYantra IITB 
  -->
 
-<robot xmlns:xacro="http://wiki.ros.org/xacro"
-       name="ur5" >
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="ur5" >
 
   <xacro:arg name="transmission_hw_interface" default="hardware_interface/PositionJointInterface"/>
 
@@ -16,8 +15,7 @@
 
   <!-- arm -->
   <xacro:ur5_robot prefix="" joint_limited="false"
-    transmission_hw_interface="$(arg transmission_hw_interface)"  
-  />
+    transmission_hw_interface="$(arg transmission_hw_interface)"/>
 
   <link name="world" />
   
