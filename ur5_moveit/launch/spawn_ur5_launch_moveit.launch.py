@@ -49,7 +49,7 @@ def generate_launch_description():
     moveit_controllers_file = get_package_file(moveit_config_folder_name, 'config/moveit_controllers.yaml')
     moveit_servo_file = get_package_file(moveit_config_folder_name, "config/ur_servo.yaml")
     moveit_rviz_file = get_package_file(moveit_config_folder_name,'config/moveit.rviz')
-    joint_limits_file = get_package_file('ur5_moveit', 'config/initial_positions.yaml')
+    joint_limits_file = get_package_file(moveit_config_folder_name, 'config/initial_positions.yaml')
 
     robot_description_semantic = load_file(srdf_file)
     kinematics_config = load_yaml(kinematics_file)
