@@ -75,4 +75,5 @@ ros2 run ur_description aruco_task4c.py
 
 Pymoveit2 package link https://github.com/AndrejOrsula/pymoveit2
 <br />
-Implementation link https://youtu.be/AVPO8WxkYn8?feature=shared
+Implementation link https://youtu.be/AVPO8WxkYn8?feature=shared <\br>
+Theme book: https://architjain19.github.io/eYRC-CosmoLogistics-ThemeBook/welcome.html
