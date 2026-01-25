@@ -26,7 +26,7 @@ This repository contains ten packages:
 10. **ur_description**: Contains description files and meshes for Universal Robots manipulators
 
 
-To launch virtual environment, use this command-
+To launch virtual environment, use this command
 
 ```sh
 ros2 launch ebot_description ebot_gazebo_launch.py
